@@ -1,0 +1,39 @@
+body {
+    padding: 2em;
+    font-size: 150%;
+    line-height: 1.8em;
+}
+h1,
+h2 {
+    font-family: 'Cooper Black WS Regular', 'Arial Black', Arial, serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+h1.overlay {
+    color: #DF7F6C;
+}
+h2.overlay {
+    color: #FFDF36;
+}
+h1:after,
+h2:after {
+    font-family: 'Cooper Black WS Hilite', 'Cooper Black WS Regular', 'Arial Black', Arial, serif;
+    color: #000;
+}
+.acier {
+    font-family: 'Acier BAT Display Outline', Futura, Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #000;
+    font-size: 2.5em;
+}
+.acier.overlay {
+    font-family: 'Acier BAT Display Strokes', Futura, Arial, sans-serif;
+    color: #C0F;
+}
+.acier:after {
+    font-family: 'Acier BAT Display Outline', Futura, Arial, sans-serif;
+    color: #000;
+}

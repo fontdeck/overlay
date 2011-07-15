@@ -3,81 +3,16 @@
 <head>
 <meta charset=utf-8 />
 <title>Overlaying Fonts</title>
-<link rel="stylesheet" href="http://f.fontdeck.com/s/css/cu388zp8Mcf8pIIbY4EMDKe/5uM/pp.local.fontdeck.com/8468.css" type="text/css" />
-<style>
-body {
-    padding: 2em;
-    font-size: 150%;
-}
-h1,
-h2 {
-    font-family: 'Cooper Black WS Regular', 'Arial Black', Arial, serif;
-    font-size-adjust:0.51;
-    font-weight: normal;
-    font-style: normal;
-    position: relative;
-}
-h1:after,
-h2:after {
-    font-family: 'Cooper Black WS Hilite', 'Cooper Black WS Regular', 'Arial Black', Arial, serif;
-    color: #000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    content: attr(data-content);
-}
-.has-overlay h1 {
-    color: #DF7F6C;
-}
-.has-overlay h2 {
-    color: #FFDF36;
-}
-h1.acier {
-    font-family: 'Acier BAT Display Outline', Futura, Arial, sans-serif;
-    font-size-adjust: 0.6;
-    font-weight: normal;
-    font-style: normal;
-    color: #000;
-}
-.has-overlay h1.acier {
-    font-family: 'Acier BAT Display Strokes', Futura, Arial, sans-serif;
-    color: #C0F;
-}
-h1.acier:after {
-    font-family: 'Acier BAT Display Outline', Futura, Arial, sans-serif;
-    top: -0.12em;
-}
-</style>
+<link rel="stylesheet" href="http://f.fontdeck.com/s/css/cu388zp8Mcf8pIIbY4EMDKe/5uM/overlay.dev/8468.css">
+<link rel="stylesheet" href="example.css">
 </head>
 <body>
 <h1>Cooper Black Regular &amp; Hilite</h1>
 <h2>A two pass process using CSS and JS</h2>
-
-<h1 class="acier">Acier Bat Display Outline &amp; Strokes</h1>
+<p class="acier">Acier Bat Display Outline &amp; Strokes</p>
 </body>
+<script src="overlay.js"></script>
 <script>
-function overlayText(selector) {
-    // Create a div for testing browser support
-    var t = document.createElement('div');
-    // If the browser supports the 'content' CSS property
-    if ('content' in t.style) {
-        // Add the class has-overlay to the body
-        document.body.className += ' has-overlay';
-        // Get a list of elements matching the selector
-        var e = document.querySelectorAll(selector);
-        // For each element
-        for (var i = 0; i < e.length; i++) {
-            // Put the element's contents in our testing div
-            t.innerHTML = e[i].innerHTML;
-            // so that we can extract the plain text version from the div
-            var p = t.textContent || t.innerText;
-            // Set the data-content to the plain text version of the content
-            e[i].setAttribute('data-content', p);
-        }
-    }
-}
-// Pass selectors to elements you wish to overlay
-overlayText('h1, h2');
+overlayText('h1, h2, .acier');
 </script>
 </html>
