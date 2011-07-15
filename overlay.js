@@ -1,4 +1,4 @@
-function overlayText(selector) {
+function setOverlay(selector) {
     // Create a div for testing browser support
     var t = document.createElement('div');
     // If the browser supports the 'content' CSS property
