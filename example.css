@@ -30,10 +30,36 @@ h2:after {
     font-size: 2.5em;
 }
 .acier.overlay {
-    font-family: 'Acier BAT Display Strokes', Futura, Arial, sans-serif;
+    font-family: 'Acier BAT Display Strokes', 'Acier BAT Display Outline', Futura, Arial, sans-serif;
     color: #C0F;
 }
 .acier:after {
     font-family: 'Acier BAT Display Outline', Futura, Arial, sans-serif;
     color: #000;
+}
+.bosko {
+    font-family: 'Bosko Regular', Times New Roman, serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #983D4D;
+    font-size: 2.5em;
+}
+.bosko.overlay {
+    font-family: 'Bosko Block', 'Bosko Regular', Times New Roman, serif;
+    color: #330915;
+}
+.bosko:after {
+    font-family: 'Bosko Regular', Times New Roman, serif;
+    color: #983D4D;
+}
+.line44 {
+    font-family: 'Line44 Back', 'Comic Sans MS', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #3B6224;
+    font-size: 2.5em;
+}
+.line44:after {
+    font-family: 'Line44 Fill One', 'Line44 Back', 'Comic Sans MS', sans-serif;
+    color: #729048;
 }
