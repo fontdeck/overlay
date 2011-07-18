@@ -14,7 +14,7 @@ function setOverlay(selector) {
         // Create a <style> element
         var s = document.createElement('style');
         // General CSS for laying out the overlay elements
-        var c = ".overlay { position: relative; } .overlay:after { position: absolute; top: 0; left: 0; z-index: 10; content: attr(data-content); }";
+        var c = ".overlay { position: relative; } .overlay:after { position: absolute; top: 0; left: 0; right:0; z-index: 10; content: attr(data-content); }";
         // Add this CSS to the <style> element
         if (s.styleSheet) {
             s.styleSheet.cssText = c;
