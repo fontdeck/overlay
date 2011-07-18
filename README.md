@@ -1,8 +1,8 @@
 #Overlay
 
-This javascript function enables one font to be added ontop of another.
+This javascript function enables one font to be added on top of another.
 
-Some fonts are designed to be used together, such as *Acier Bat Display Outline* and *Acier Bat Display Strokes*. This script enables people to specify a font to overlay using the :after psudo class.
+Some fonts are designed to be used together, such as _Acier Bat Display Outline_ and _Acier Bat Display Strokes_. This script enables people to specify a font to overlay using the :after pseudo class.
 
 ##Requirements
 * Requires Javascript, but degrades gracefully using the `has-overlay` class
